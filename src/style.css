@@ -1,0 +1,280 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(90deg, rgba(104, 63, 97, 0.151), rgb(179, 179, 209));
+}
+
+i {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 0, 140);
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #707479;
+}
+
+/**
+  * ! Navbar STyles are here
+  **/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(180deg, black, rgb(138, 136, 136));
+  color: white;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo>i {
+  margin-right: 12px;
+  background: none;
+  color: rgb(255, 0, 140);
+}
+
+form.example {
+  border-radius: 10px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.cart {
+  position: relative;
+  background-color: #fff;
+  color: rgb(255, 0, 140);
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.bi-cart2 {
+  color: rgb(255, 0, 140);
+}
+
+.cart:hover {
+  transition: all 0.3s;
+  transform: scale(1.08);
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 13px;
+}
+
+/**
+  * ! Shop items styles are here
+  **/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  gap: 80px;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+.item {
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item:hover {
+  transition: all 0.4s;
+  transform: scale(1.5);
+  z-index: 9;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgb(221, 221, 221);
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-quantity>h2 {
+  color: rgb(211, 46, 73);
+}
+
+.quantity {
+  color: rgb(211, 46, 73);
+  font-weight: bolder;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: #fff;
+  background-color: #a1a6a8;
+}
+
+.bi-plus-lg {
+  color: #fff;
+  background-color: #a1a6a8;
+}
+
+
+
+/**
+  * ! style rules for label and some buttons
+  **/
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.removeAll {
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+  * ! style rules for shopping-cart
+  **/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 80px;
+}
+
+/**
+  * ! style rules for cart-item
+  **/
+
+.cart-item {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
