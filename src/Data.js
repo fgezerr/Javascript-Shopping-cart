@@ -4,7 +4,7 @@ let shopItemsData = [
       name: "Casual Shirt",
       price: 45,
       desc: "sports shirt .. other colors are also available...",
-      img: "images/img-8.jpg",
+      img: "images/img-10.jpg",
     },
     {
       id: "ioytrhndcv",
@@ -25,7 +25,7 @@ let shopItemsData = [
       name: "Mens Shirt",
       price: 35,
       desc: "Don't miss the beautiful suits...",
-      img: "images/img-10.jpg",
+      img: "images/img-8.jpg",
     },
     {
       id: "a",
